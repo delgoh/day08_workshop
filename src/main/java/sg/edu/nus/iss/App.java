@@ -21,7 +21,7 @@ public class App
             System.out.println("Dealt a card: " + dealtCard.toString());
         }
 
-        System.out.println("Remaining cards in deck:");
+        System.out.println("Remaining cards in deck: " + deck.noOfCards());
         System.out.println(deck.toString());
     }
 }

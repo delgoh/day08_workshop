@@ -18,6 +18,23 @@ public class Card {
     }
 
     public String toString() {
-        return "" + this.value + "-" + this.suit;
+        String returnValue = "";
+        switch (this.value) {
+            case 1:
+                returnValue = "A";
+                break;
+            case 11:
+                returnValue = "J";
+                break;
+            case 12:
+                returnValue = "Q";
+                break;
+            case 13:
+                returnValue = "K";
+                break;
+            default:
+                returnValue = String.valueOf(this.value);
+        }
+        return "" + returnValue + "-" + this.suit;
     }
 }

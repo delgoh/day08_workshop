@@ -30,6 +30,10 @@ public class DeckOfCards {
         }
     }
 
+    public int noOfCards() {
+        return deck.size();
+    }
+
     public String toString() {
         String str = "";
         for (Card card : deck)
